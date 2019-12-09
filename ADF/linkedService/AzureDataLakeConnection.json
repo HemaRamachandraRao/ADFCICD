@@ -1,0 +1,24 @@
+{
+	"name": "AzureDataLakeConnection",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeAnalytics",
+		"typeProperties": {
+			"accountName": "pocxfdatalake",
+			"servicePrincipalId": "f03e8099-f879-4e3a-bdb7-f0ec9e6040c9",
+			"servicePrincipalKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "pocxfsecret",
+				"secretVersion": ""
+			},
+			"tenant": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+			"subscriptionId": "0cef62f7-8631-4c17-8c8d-2d5cb8f81963",
+			"resourceGroupName": "pocxfresourcegroup"
+		}
+	}
+}
