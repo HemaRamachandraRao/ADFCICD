@@ -1,0 +1,24 @@
+{
+	"name": "poxftrigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "DataLakeJob",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 30,
+				"startTime": "2019-12-02T10:09:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
